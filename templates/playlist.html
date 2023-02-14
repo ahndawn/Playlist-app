@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Playlist Information</h1>
+  <p>Playlist Name: {{ playlist.name }}</p>
+  <p>Playlist Description: {{ playlist.description }}</p>
+</div>
+
+
+<div class="text-danger">
+  <!-- SHOW ALL OF THE SONGS IN THIS PLAYLIST HERE -->
+</div>
+
+<p>
+  <a class="btn btn-primary" href="/playlists/{{ playlist.id }}/add-song">
+    Add Song To Playlist
+  </a>
+</p>
+
+{% endblock %}
